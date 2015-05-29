@@ -1,0 +1,30 @@
+1,在github上面申请账号
+jinjiashan/qq46
+email:jinjiashan@163.com
+
+2,在github上面建立一个repo仓库, 系统会给出一个http或者ssh的地址
+
+此时可以在本地由权限的地方git clone http:
+
+3,本地要上传代码的地方
+git init, 建立一个git本地仓库,会产生一个.git的隐藏文件
+
+4,把要上传的文件添加到本地仓库的列表
+git add ./
+
+5,git status 查看状态
+
+6,提交改动, 包括add rm modify
+git commit -m "msg"
+
+7,上一步可能需要本地来配置一个邮件
+git config --global user.email "jinjiashan@163.com"
+
+8,远程的地址
+git remote add source https://github.com/jinjiashan
+
+9,正真的提交
+git push -u source master
+
+提交的时候会让你提供github的用户名和密码
+git的大部分的使用和svn是一样的
